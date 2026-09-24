@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexi Code</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="settings-page center">
+            <h2>Game Mode</h2>
+
+            <div class="settings-wrapper center">              
+                <form class="setup" id="setup">
+                    <div class="mode">
+                        <label for="players">How many players?</label>
+                        <select name="players" id="players">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                        </select>
+                    </div>
+
+                    <div class="mode">
+                        <label for="levels">Difficulty</label>
+                        <select name="levels" id="levels">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+
+                    <div class="names hidden" id="names">
+                        <div class="name-wrapper">
+                            <label for="player1">Player 1</label>
+                            <input type="text" id="player1" name="player1" placeholder="Your Nickname">
+                        </div>
+                        <div class="name-wrapper">
+                            <label for="player2">Player 2</label>
+                            <input type="text" id="player2" name="player2" placeholder="Your Nickname">
+                        </div>
+                        <div class="name-wrapper">
+                            <label for="player3">Player 3</label>
+                            <input type="text" id="player3" name="player3" placeholder="Your Nickname">
+                        </div>
+                        <div class="name-wrapper">
+                            <label for="player4">Player 4</label>
+                            <input type="text" id="player4" name="player4" placeholder="Your Nickname">
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Start  Game" class="start-btn">
+                </form>
+            </div>
+
+        </div>    
+    </div>
+
+    <script src="js/settings.js"></script>
+
+    
+</body>
+</html>
